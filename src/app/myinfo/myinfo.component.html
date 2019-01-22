@@ -1,6 +1,5 @@
 <app-headernav></app-headernav>
-<div class="my-info-container grid-container">
-    <p>*the below information is derived from a mock datat file inside the app</p>
+<div class="my-info-container">
 
     <div class="my-button">
         <button (click)="toggleButton()">View/Hide My Info</button>
@@ -10,17 +9,17 @@
     
       <div class="detailsInfo" id="infodetail" *ngIf="!isDisplayed" >
         <ul *ngFor="let agentInfo of agentInfo">
-              <li>Name: {{agentInfo.name | titlecase }}</li>
-              <li>License Number {{agentInfo.licenseNumber}}:</li>
-              <li>License Expiration Date: {{agentInfo.licenceExp}}</li>
-              <li>Home State: {{agentInfo.licenseState}}</li>   
+              <li><strong>Name:</strong> {{agentInfo.name | titlecase }}</li>
+              <li><strong>License Number:</strong> {{agentInfo.licenseNumber}}:</li>
+              <li><strong>License Expiration Date:</strong> {{agentInfo.licenseExp}}</li>
+              <li><strong>Home State:</strong> {{agentInfo.licenseState}}</li>   
           
       </ul>
+
+      <img src="http://www.tranquistinsurance.com/wp-content/uploads/2015/08/man-avatar-11.png">
+      </div>
     
-      <div class=imageContainer>
-        <img src="https://highstreetdentalcentre.com/wp-content/uploads/2018/04/empty.avatar.scaled-681x1024.jpg">
-      </div>
-      </div>
+      
     
 
 
