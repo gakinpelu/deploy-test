@@ -1,10 +1,4 @@
-.my-info {
-    margin-bottom: 300px;
-    width: auto;
-    height: 100vh;
-    background: seashell;
-    
-}
+
 
 p , h1 {
     color: red;
@@ -15,6 +9,10 @@ p , h1 {
 img {
     width: 100px;
     height: 100px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4
     
 }
 
@@ -24,9 +22,12 @@ img {
 
 
 .detailsInfo { 
-    width: 400px;
-    margin-top: 7.5em;
-}
+    width: 700px;
+    
+    border: solid black 4px;
+    
+    background: seashell;
+}   
 
 button {
     text-align: center;
@@ -36,6 +37,8 @@ button {
     border-left: 2px red solid;
     padding-top: 2ems;
     margin-top: 2ems;
+    margin-bottom: 2rem;
+    background: lightgreen
     
 }
 
@@ -46,8 +49,7 @@ h1 {
 
 .my-button {
     width: 500px;
-    margin-left: 40%;
-    margin-top: 10ems;
+   
 }
 
 li {
@@ -55,5 +57,6 @@ li {
 }
 
 .my-info-container {
-    background: rgb(199, 199, 207)
+    background: whitesmoke;
+    height: 100vh;
 }
